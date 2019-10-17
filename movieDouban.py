@@ -12,7 +12,7 @@ def askURL(url):
     request = urllib.request.Request(url)#发送请求
     try:
         response = urllib.request.urlopen(request)#取得响应
-        html= response.read()#获取网页内容
+        html= response.read()#获取网页内容de1
         print ("%s crawl success" % url)
     except urllib.error.URLError as e:
         print ("%s crawl fail" % url)
